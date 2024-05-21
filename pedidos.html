@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Pedidos del Día de las Madres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Pedidos del Día de las Madres</h1>
+        <form id="pedidoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required>
+
+            <label for="pedidos">Número de Pedidos:</label>
+            <input type="number" id="pedidos" name="pedidos" min="1" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Total de Pedidos: <span id="totalPedidos">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
